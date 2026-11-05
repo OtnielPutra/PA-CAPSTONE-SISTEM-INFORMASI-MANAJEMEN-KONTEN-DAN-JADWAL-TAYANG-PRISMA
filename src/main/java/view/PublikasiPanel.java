@@ -378,9 +378,19 @@ public class PublikasiPanel extends javax.swing.JPanel implements view.component
 
         scrTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(226, 232, 240)));
         tblData.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {},
-            new String [] {}
-        ));
+            new Object [][] {
+            },
+            new String [] {
+                "ID", "Konten", "Kanal", "Tanggal", "Link", "Status"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         scrTable.setViewportView(tblData);
 
         pnlCard.add(scrTable, java.awt.BorderLayout.CENTER);

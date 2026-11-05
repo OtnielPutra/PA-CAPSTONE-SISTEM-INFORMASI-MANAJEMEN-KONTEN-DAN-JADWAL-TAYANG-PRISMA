@@ -88,17 +88,20 @@ public class MonitorPanel extends JPanel implements Refreshable {
         wrapProgram.setOpaque(false);
         wrapProgram.setLayout(new java.awt.BorderLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+                jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Nama Program", "Kategori", "URL", "Status"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(jTable1);
 
         wrapProgram.add(jScrollPane1, java.awt.BorderLayout.CENTER);
@@ -109,17 +112,20 @@ public class MonitorPanel extends JPanel implements Refreshable {
         wrapKonten.setOpaque(false);
         wrapKonten.setLayout(new java.awt.BorderLayout());
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+                jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Judul Konten", "Jenis", "Kategori", "Program TV", "Tgl Catat", "Status"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane2.setViewportView(jTable2);
 
         wrapKonten.add(jScrollPane2, java.awt.BorderLayout.CENTER);
@@ -130,17 +136,20 @@ public class MonitorPanel extends JPanel implements Refreshable {
         wrapJadwal.setOpaque(false);
         wrapJadwal.setLayout(new java.awt.BorderLayout());
 
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+                jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Program TV", "Kanal", "Tanggal", "Waktu", "Petugas", "Status"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane3.setViewportView(jTable3);
 
         wrapJadwal.add(jScrollPane3, java.awt.BorderLayout.CENTER);
@@ -151,17 +160,20 @@ public class MonitorPanel extends JPanel implements Refreshable {
         wrapKerjaSama.setOpaque(false);
         wrapKerjaSama.setLayout(new java.awt.BorderLayout());
 
-        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+                jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Judul Kerja Sama", "Mitra", "Jenis", "Periode", "Nilai Kontrak", "Program TV", "Status"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane4.setViewportView(jTable4);
 
         wrapKerjaSama.add(jScrollPane4, java.awt.BorderLayout.CENTER);
@@ -172,17 +184,20 @@ public class MonitorPanel extends JPanel implements Refreshable {
         wrapMitra.setOpaque(false);
         wrapMitra.setLayout(new java.awt.BorderLayout());
 
-        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+                jTable5.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID Mitra", "Nama Mitra", "Jenis", "Email", "Alamat", "Status"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane5.setViewportView(jTable5);
 
         wrapMitra.add(jScrollPane5, java.awt.BorderLayout.CENTER);

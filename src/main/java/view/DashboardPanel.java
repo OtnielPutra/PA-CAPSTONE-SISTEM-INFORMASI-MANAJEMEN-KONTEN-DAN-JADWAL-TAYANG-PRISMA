@@ -223,6 +223,23 @@ public class DashboardPanel extends JPanel implements Refreshable {
         cardJadwal.add(pnlJadwalHead, java.awt.BorderLayout.NORTH);
 
         scrJadwal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(226, 232, 240)));
+
+        tblJadwal.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Progr", "Kanal", "Tanggal", "Waktu", "Status"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         scrJadwal.setViewportView(tblJadwal);
 
         cardJadwal.add(scrJadwal, java.awt.BorderLayout.CENTER);
@@ -251,6 +268,23 @@ public class DashboardPanel extends JPanel implements Refreshable {
         cardMitra.add(pnlMitraHead, java.awt.BorderLayout.NORTH);
 
         scrMitra.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(226, 232, 240)));
+
+        tblMitra.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Mitra", "Jumlah Kerja Sama"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         scrMitra.setViewportView(tblMitra);
 
         cardMitra.add(scrMitra, java.awt.BorderLayout.CENTER);
