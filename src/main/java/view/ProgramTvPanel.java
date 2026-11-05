@@ -55,15 +55,10 @@ public class ProgramTvPanel extends javax.swing.JPanel implements view.component
     }
 
     private void initTabel() {
-        tblModel = new DefaultTableModel(KOLOM, 0) {
-            private static final long serialVersionUID = 2L;
-
-            @Override
-            public boolean isCellEditable(int baris, int kolom) {
-                return false;
-            }
-        };
-        tblData.setModel(tblModel);
+        // Model tabel diambil dari form (GUI Builder): judul/kolom diatur lewat
+        // tab Design (Properties -> model), baris diisi dari database di muatUlang().
+        // Model TIDAK digantikan lagi, jadi hasil desain ikut tampil saat aplikasi jalan.
+        tblModel = (DefaultTableModel) tblData.getModel();
         tblData.setRowHeight(34);
         tblData.setFillsViewportHeight(true);
         tblData.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);

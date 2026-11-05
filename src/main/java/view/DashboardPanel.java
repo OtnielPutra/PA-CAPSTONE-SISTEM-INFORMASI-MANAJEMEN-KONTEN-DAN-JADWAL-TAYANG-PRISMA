@@ -6,6 +6,7 @@ import model.Pengguna;
 import view.component.*;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.List;
 
@@ -18,30 +19,16 @@ import java.util.List;
  * mengatur tampilan secara drag-and-drop. Jangan mengedit kode di antara
  * tanda //GEN-BEGIN dan //GEN-END; perubahan tampilan dilakukan lewat Design.
  *
- * Kerangka tampilan (header, 4 kartu statistik, 2 kartu tabel) kini dikelola
- * GUI Builder. Bagian dinamis (nama pengguna, angka statistik, isi tabel
- * DataTable dengan pewarna status) diisi lewat kode di luar blok yang dijaga.
+ * Kerangka tampilan (header, 4 kartu statistik, 2 kartu tabel beserta kolomnya)
+ * kini dikelola GUI Builder: tabel tblJadwal dan tblMitra milik form dipakai
+ * LANGSUNG saat runtime (tidak digantikan tabel lain). Bagian dinamis (nama
+ * pengguna, angka statistik, isi baris tabel) diisi lewat kode di luar blok
+ * yang dijaga.
  */
 public class DashboardPanel extends JPanel implements Refreshable {
     private static final long serialVersionUID = 1L;
 
     private final DashboardController controller = new DashboardController();
-
-    private final EntityTableModel<JadwalTayang> jadwalModel = new EntityTableModel<JadwalTayang>(
-            new String[] {"Program", "Kanal", "Tanggal", "Waktu", "Status"},
-            (j, c) -> {
-                switch (c) {
-                    case 0: return Fmt.dash(j.getNamaProgram());
-                    case 1: return Fmt.dash(j.getNamaKanal());
-                    case 2: return Fmt.date(j.getTanggalTayang());
-                    case 3: return Fmt.time(j.getWaktuMulai()) + " - " + Fmt.time(j.getWaktuSelesai());
-                    default: return j.getStatusJadwal();
-                }
-            });
-
-    private final EntityTableModel<Object[]> mitraModel = new EntityTableModel<Object[]>(
-            new String[] {"Mitra", "Jumlah Kerja Sama"},
-            (row, c) -> c == 0 ? String.valueOf(row[0]) : row[1] + " kerja sama");
 
     public DashboardPanel(Pengguna user) {
         initComponents();
@@ -52,15 +39,12 @@ public class DashboardPanel extends JPanel implements Refreshable {
         refresh();
     }
 
-    /** Memasang DataTable asli (dengan pewarna kolom status) ke scroll pane hasil desain. */
+    /** Memberi gaya DataTable pada tabel milik form - tabel TIDAK digantikan. */
     private void initTables() {
-        DataTable jadwalTable = new DataTable(jadwalModel);
-        jadwalTable.setStatusColumn(4);
-        scrJadwal.setViewportView(jadwalTable);
+        DataTable.gayakan(tblJadwal, 4); // kolom ke-5 (Status) diberi warna
         scrJadwal.getViewport().setBackground(Color.WHITE);
 
-        DataTable mitraTable = new DataTable(mitraModel);
-        scrMitra.setViewportView(mitraTable);
+        DataTable.gayakan(tblMitra, -1);
         scrMitra.getViewport().setBackground(Color.WHITE);
 
         scrBody.getViewport().setOpaque(false);
@@ -74,9 +58,26 @@ public class DashboardPanel extends JPanel implements Refreshable {
         lblNilaiProgram.setText(String.valueOf(s.program));
         lblNilaiJadwal.setText(String.valueOf(s.jadwal));
         lblNilaiKerjaSama.setText(String.valueOf(s.kerjaSama));
+
+        // Baris diisi ke model milik form; judul/kolom tetap dari Design view.
         List<JadwalTayang> jadwal = controller.jadwalTerbaru(5);
-        jadwalModel.setRows(jadwal);
-        mitraModel.setRows(controller.kerjaSamaPerMitra(6));
+        DefaultTableModel mk = (DefaultTableModel) tblJadwal.getModel();
+        mk.setRowCount(0);
+        for (JadwalTayang j : jadwal) {
+            mk.addRow(new Object[] {
+                Fmt.dash(j.getNamaProgram()),
+                Fmt.dash(j.getNamaKanal()),
+                Fmt.date(j.getTanggalTayang()),
+                Fmt.time(j.getWaktuMulai()) + " - " + Fmt.time(j.getWaktuSelesai()),
+                j.getStatusJadwal()
+            });
+        }
+
+        DefaultTableModel mm = (DefaultTableModel) tblMitra.getModel();
+        mm.setRowCount(0);
+        for (Object[] baris : controller.kerjaSamaPerMitra(6)) {
+            mm.addRow(new Object[] {String.valueOf(baris[0]), baris[1] + " kerja sama"});
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -229,7 +230,7 @@ public class DashboardPanel extends JPanel implements Refreshable {
 
             },
             new String [] {
-                "Progr", "Kanal", "Tanggal", "Waktu", "Status"
+                "Program", "Kanal", "Tanggal", "Waktu", "Status"
             }
         ) {
             boolean[] canEdit = new boolean [] {

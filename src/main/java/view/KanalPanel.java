@@ -55,15 +55,10 @@ public class KanalPanel extends javax.swing.JPanel implements view.component.Ref
     }
 
     private void initTabel() {
-        tblModel = new DefaultTableModel(KOLOM, 0) {
-            private static final long serialVersionUID = 2L;
-
-            @Override
-            public boolean isCellEditable(int baris, int kolom) {
-                return false;
-            }
-        };
-        tblData.setModel(tblModel);
+        // Model tabel diambil dari form (GUI Builder): judul/kolom diatur lewat
+        // tab Design (Properties -> model), baris diisi dari database di muatUlang().
+        // Model TIDAK digantikan lagi, jadi hasil desain ikut tampil saat aplikasi jalan.
+        tblModel = (DefaultTableModel) tblData.getModel();
         tblData.setRowHeight(34);
         tblData.setFillsViewportHeight(true);
         tblData.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -305,8 +300,7 @@ public class KanalPanel extends javax.swing.JPanel implements view.component.Ref
         pnlToolbar.setLayout(new java.awt.BorderLayout());
 
         pnlSearch.setOpaque(false);
-        pnlSearch.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 4, 0));
-
+        pnlSearch.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         txtSearch.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(226, 232, 240)), javax.swing.BorderFactory.createEmptyBorder(6, 10, 6, 10)));
         txtSearch.setColumns(24);
@@ -343,11 +337,10 @@ public class KanalPanel extends javax.swing.JPanel implements view.component.Ref
         });
         pnlSearch.add(btnReset);
 
-
         pnlToolbar.add(pnlSearch, java.awt.BorderLayout.WEST);
 
         pnlActions.setOpaque(false);
-        pnlActions.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 8, 0));
+        pnlActions.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
 
         btnUbah.setFocusPainted(false);
         btnUbah.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
@@ -374,8 +367,10 @@ public class KanalPanel extends javax.swing.JPanel implements view.component.Ref
         pnlCard.add(pnlToolbar, java.awt.BorderLayout.NORTH);
 
         scrTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(226, 232, 240)));
+
         tblData.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+
             },
             new String [] {
                 "ID", "Nama Kanal", "Jenis", "Platform", "Status"
@@ -384,6 +379,7 @@ public class KanalPanel extends javax.swing.JPanel implements view.component.Ref
             boolean[] canEdit = new boolean [] {
                 false, false, false, false, false
             };
+
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
@@ -429,7 +425,6 @@ public class KanalPanel extends javax.swing.JPanel implements view.component.Ref
     private javax.swing.JButton btnHapus;
     private javax.swing.JButton btnReset;
     private javax.swing.JButton btnUbah;
-    private javax.swing.JTextField txtSearch;
     private javax.swing.Box.Filler filler1;
     private javax.swing.JLabel lblCount;
     private javax.swing.JLabel lblSubtitle;
@@ -442,5 +437,6 @@ public class KanalPanel extends javax.swing.JPanel implements view.component.Ref
     private javax.swing.JPanel pnlToolbar;
     private javax.swing.JScrollPane scrTable;
     private javax.swing.JTable tblData;
+    private javax.swing.JTextField txtSearch;
     // End of variables declaration//GEN-END:variables
 }
