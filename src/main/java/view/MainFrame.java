@@ -33,16 +33,29 @@ public class MainFrame extends javax.swing.JFrame {
     /** Konstruktor kosong - hanya dipakai NetBeans untuk merender Design view. */
     public MainFrame() {
         initComponents();
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        
     }
 
     /** Konstruktor runtime: menyusun menu navigasi sesuai peran pengguna. */
     public MainFrame(Pengguna user) {
         initComponents();
         this.user = user;
+        setResizable(false);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        pasUkuranLayar();
         initUserData(user);
     }
 
+    private void pasUkuranLayar() {
+        java.awt.GraphicsConfiguration gc = getGraphicsConfiguration();
+        java.awt.Rectangle layar = gc.getBounds();
+        java.awt.Insets taskbar = java.awt.Toolkit.getDefaultToolkit().getScreenInsets(gc);
+        setBounds(layar.x + taskbar.left,
+                  layar.y + taskbar.top,
+                  layar.width - taskbar.left - taskbar.right,
+                  layar.height - taskbar.top - taskbar.bottom);
+    }
+    
     private void initUserData(Pengguna pengguna) {
         String nama = pengguna.getNamaLengkap() == null ? "" : pengguna.getNamaLengkap().trim();
         lblAvatar.setText(nama.isEmpty() ? "?" : nama.substring(0, 1).toUpperCase());
