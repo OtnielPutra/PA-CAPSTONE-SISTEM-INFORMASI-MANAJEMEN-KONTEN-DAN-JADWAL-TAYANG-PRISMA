@@ -12,8 +12,8 @@ import java.sql.SQLException;
 public class Koneksi {
 
     private static final String HOST = "localhost";
-    private static final String PORT = "3306";          // sesuai prisma.sql (XAMPP biasanya 3306)
-    private static final String DATABASE = "prisma";   // nama database sesuai prisma.sql
+    private static final String PORT = "3306";          
+    private static final String DATABASE = "prisma_tv";   // nama database sesuai prisma_tv.sql
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
