@@ -18,6 +18,10 @@ public class JadwalDialog extends javax.swing.JDialog {
 
     private static final long serialVersionUID = 1L;
 
+    /** Format tanggal untuk pesan validasi (contoh: 07 Nov 2025). */
+    private static final java.time.format.DateTimeFormatter TGL_PESAN =
+            java.time.format.DateTimeFormatter.ofPattern("dd MMM yyyy", new java.util.Locale("id", "ID"));
+
     private final JadwalController controller = new JadwalController();
     private final boolean baru;
     private final JadwalTayang j;
@@ -165,7 +169,27 @@ public class JadwalDialog extends javax.swing.JDialog {
     private String validasi() {
         if (cmbProgram.getSelectedItem() == null) { return "Program TV wajib dipilih."; }
         if (cmbKanal.getSelectedItem() == null) { return "Kanal wajib dipilih."; }
+        String galatTanggal = pesanGalatTanggal(ambilTanggal(sprTanggal));
+        if (galatTanggal != null) { return galatTanggal; }
         if (!ambilWaktu(sprSelesai).isAfter(ambilWaktu(sprMulai))) { return "Waktu Selesai harus setelah Waktu Mulai."; }
+        return null;
+    }
+
+ 
+    static String pesanGalatTanggal(java.time.LocalDate tgl) {
+        if (tgl == null) {
+            return "Tanggal Tayang wajib diisi.";
+        }
+        java.time.LocalDate hariIni = java.time.LocalDate.now();
+        java.time.LocalDate terlama = hariIni.minusYears(1);
+        java.time.LocalDate terjauh = hariIni.plusYears(5);
+        if (tgl.isBefore(terlama)) {
+            return "Tidak Bisa memasukan Tanggal yang Kurang Dari" + " " +TGL_PESAN.format(terlama);
+
+        }
+        if (tgl.isAfter(terjauh)) {
+            return "Tidak Bisa memasukan Tanggal yang Lebih Dari " + " " +TGL_PESAN.format(terjauh);
+        }
         return null;
     }
 

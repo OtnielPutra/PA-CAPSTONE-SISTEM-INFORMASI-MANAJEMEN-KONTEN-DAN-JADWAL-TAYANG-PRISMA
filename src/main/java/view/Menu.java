@@ -52,7 +52,11 @@ public enum Menu {
                     || m == KANAL || m == MITRA || m == KERJASAMA || m == AKUN;
         }
         if (Pengguna.ROLE_PETUGAS_KONTEN.equals(peran)) {
-            return m == DASHBOARD || m == KONTEN || m == PROGRAM
+            // PROGRAM sengaja tidak ada: tombol menu "Program TV" disembunyikan
+            // untuk petugas konten di SEMUA sidebar. Data Program TV tetap bisa
+            // dipantau lewat tab "Program TV" di dalam halaman Monitor Data,
+            // dan menu Program TV tetap ada untuk Admin serta petugas jadwal.
+            return m == DASHBOARD || m == KONTEN
                     || m == PUBLIKASI || m == LAMPIRAN || m == MONITOR;
         }
         if (Pengguna.ROLE_PETUGAS_JADWAL.equals(peran)) {

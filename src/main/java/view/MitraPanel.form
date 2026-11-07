@@ -18,294 +18,857 @@
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" />
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="pnlHead">
-      <Properties>
-        <Property name="opaque" type="boolean" value="false" />
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-          <BorderConstraints direction="North" />
-        </Constraint>
-      </Constraints>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" />
-      <SubComponents>
-        <Container class="javax.swing.JPanel" name="pnlHeadText">
-          <Properties>
-            <Property name="opaque" type="boolean" value="false" />
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-              <BorderConstraints direction="West" />
-            </Constraint>
-          </Constraints>
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
-            <Property name="axis" type="int" value="1" />
-          </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="lblTitle">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="SansSerif" size="24" style="1" />
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="2a" green="17" red="f" type="rgb" />
-                </Property>
-                <Property name="text" type="java.lang.String" value="Data Mitra" />
-              </Properties>
-            </Component>
-            <Component class="javax.swing.Box$Filler" name="filler1">
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.Box.Filler(new java.awt.Dimension(0, 6), new java.awt.Dimension(0, 6), new java.awt.Dimension(0, 6))" />
-              </AuxValues>
-            </Component>
-            <Component class="javax.swing.JLabel" name="lblSubtitle">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="SansSerif" size="14" style="0" />
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="8b" green="74" red="64" type="rgb" />
-                </Property>
-                <Property name="text" type="java.lang.String" value="Kelola data perusahaan atau pihak yang bekerja sama." />
-              </Properties>
-            </Component>
-          </SubComponents>
-        </Container>
-        <Component class="javax.swing.JButton" name="btnAdd">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="eb" green="63" red="25" type="rgb" />
-            </Property>
-            <Property name="focusPainted" type="boolean" value="false" />
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="13" style="1" />
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb" />
-            </Property>
-            <Property name="text" type="java.lang.String" value="+ Tambah Mitra" />
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddActionPerformed" />
-          </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-              <BorderConstraints direction="East" />
-            </Constraint>
-          </Constraints>
-        </Component>
-      </SubComponents>
-    </Container>
-    <Container class="javax.swing.JPanel" name="pnlCard">
+    <Container class="javax.swing.JPanel" name="pnlMenu">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb" />
+          <Color blue="3a" green="1f" red="b" type="rgb"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
-            <EmptyBorder bottom="12" left="16" right="16" top="16" />
+            <EmptyBorder bottom="14" left="14" right="14" top="24"/>
           </Border>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-          <BorderConstraints direction="Center" />
+          <BorderConstraints direction="West"/>
         </Constraint>
       </Constraints>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" />
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+        <Property name="axis" type="int" value="1"/>
+      </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="pnlToolbar">
+        <Component class="javax.swing.JLabel" name="lblBrand">
           <Properties>
-            <Property name="opaque" type="boolean" value="false" />
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-              <BorderConstraints direction="North" />
-            </Constraint>
-          </Constraints>
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" />
-          <SubComponents>
-            <Container class="javax.swing.JPanel" name="pnlSearch">
-              <Properties>
-                <Property name="opaque" type="boolean" value="false" />
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-                  <BorderConstraints direction="West" />
-                </Constraint>
-              </Constraints>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                <Property name="alignment" type="int" value="0" />
-                <Property name="hgap" type="int" value="4" />
-                <Property name="vgap" type="int" value="0" />
-              </Layout>
-              <SubComponents>
-                <Component class="javax.swing.JTextField" name="txtSearch">
-                  <Properties>
-                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                      <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
-                        <CompoundBorder>
-                          <Border PropertyName="outside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder>
-                              <Color PropertyName="color" blue="f0" green="e8" red="e2" type="rgb" />
-                            </LineBorder>
-                          </Border>
-                          <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
-                            <EmptyBorder bottom="6" left="10" right="10" top="6" />
-                          </Border>
-                        </CompoundBorder>
-                      </Border>
-                    </Property>
-                    <Property name="columns" type="int" value="24" />
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="SansSerif" size="13" style="0" />
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="2a" green="17" red="f" type="rgb" />
-                    </Property>
-                    <Property name="toolTipText" type="java.lang.String" value="Ketik kata kunci lalu tekan Enter" />
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSearchActionPerformed" />
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnCari">
-                  <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="eb" green="63" red="25" type="rgb" />
-                    </Property>
-                    <Property name="focusPainted" type="boolean" value="false" />
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="SansSerif" size="13" style="1" />
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb" />
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Cari" />
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCariActionPerformed" />
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnReset">
-                  <Properties>
-                    <Property name="focusPainted" type="boolean" value="false" />
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="SansSerif" size="13" style="1" />
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="2a" green="17" red="f" type="rgb" />
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Reset" />
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResetActionPerformed" />
-                  </Events>
-                </Component>
-              </SubComponents>
-            </Container>
-            <Container class="javax.swing.JPanel" name="pnlActions">
-              <Properties>
-                <Property name="opaque" type="boolean" value="false" />
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-                  <BorderConstraints direction="East" />
-                </Constraint>
-              </Constraints>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                <Property name="alignment" type="int" value="2" />
-                <Property name="hgap" type="int" value="8" />
-                <Property name="vgap" type="int" value="0" />
-              </Layout>
-              <SubComponents>
-                <Component class="javax.swing.JButton" name="btnUbah">
-                  <Properties>
-                    <Property name="focusPainted" type="boolean" value="false" />
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="SansSerif" size="13" style="1" />
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Ubah" />
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUbahActionPerformed" />
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnHapus">
-                  <Properties>
-                    <Property name="focusPainted" type="boolean" value="false" />
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="SansSerif" size="13" style="1" />
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Hapus" />
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHapusActionPerformed" />
-                  </Events>
-                </Component>
-              </SubComponents>
-            </Container>
-          </SubComponents>
-        </Container>
-        <Container class="javax.swing.JScrollPane" name="scrTable">
-          <Properties>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder>
-                  <Color PropertyName="color" blue="f0" green="e8" red="e2" type="rgb" />
-                </LineBorder>
-              </Border>
-            </Property>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-          </AuxValues>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-              <BorderConstraints direction="Center" />
-            </Constraint>
-          </Constraints>
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout" />
-          <SubComponents>
-            <Component class="javax.swing.JTable" name="tblData">
-              <Properties>
-                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="6" rowCount="0">
-                    <Column editable="false" title="ID Mitra" type="java.lang.Object"/>
-                    <Column editable="false" title="Nama Mitra" type="java.lang.Object"/>
-                    <Column editable="false" title="Jenis" type="java.lang.Object"/>
-                    <Column editable="false" title="Email" type="java.lang.Object"/>
-                    <Column editable="false" title="Alamat" type="java.lang.Object"/>
-                    <Column editable="false" title="Status" type="java.lang.Object"/>
-                  </Table>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
-        </Container>
-        <Component class="javax.swing.JLabel" name="lblCount">
-          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="12" style="0" />
+              <Font name="SansSerif" size="26" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="8b" green="74" red="64" type="rgb" />
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value=" " />
+            <Property name="text" type="java.lang.String" value="PRISMA"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblTagline">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="10" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="fe" green="db" red="bf" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="CONTENT &amp; BROADCAST"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.Box$Filler" name="fillerMenu1">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.Box.Filler(new java.awt.Dimension(0, 22), new java.awt.Dimension(0, 22), new java.awt.Dimension(0, 22))"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblGrupUtama">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder bottom="8" left="12" right="0" top="14"/>
+              </Border>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="11" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="b8" green="a3" red="94" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="MENU UTAMA"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuDashboard">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Dashboard"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuDashboardActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuKonten">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Manajemen Konten"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuKontenActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuProgram">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Program TV"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuProgramActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuJadwal">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Jadwal Tayang"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuJadwalActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuPublikasi">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Publikasi Konten"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuPublikasiActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuLampiran">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lampiran Konten"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuLampiranActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuMonitor">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Monitor Data"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuMonitorActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblGrupSistem">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder bottom="8" left="12" right="0" top="14"/>
+              </Border>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="11" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="b8" green="a3" red="94" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="PENGATURAN SISTEM"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuKanal">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Data Kanal"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuKanalActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuMitra">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="af" green="40" red="1e" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Data Mitra"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuMitraActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuKerjaSama">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Kerja Sama"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuKerjaSamaActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMenuAkun">
+          <Properties>
+            <Property name="alignmentX" type="float" value="0.0"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="3a" green="1f" red="b" type="rgb"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="focusPainted" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="d5" red="cb" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 40]"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Akun Pengguna"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuAkunActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.Box$Filler" name="fillerMenu2">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 32767))"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="pnlRight">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fb" green="f6" red="f3" type="rgb"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      <SubComponents>
+      <Container class="javax.swing.JPanel" name="pnlTopbar">
+        <Properties>
+          <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+            <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          </Property>
+          <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+            <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
+              <CompoundBorder>
+                <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                  <EmptyBorder bottom="14" left="28" right="24" top="14"/>
+                </Border>
+              </CompoundBorder>
+            </Border>
+          </Property>
+        </Properties>
+        <Constraints>
+          <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+            <BorderConstraints direction="North"/>
+          </Constraint>
+        </Constraints>
+
+        <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+        <SubComponents>
+          <Container class="javax.swing.JPanel" name="pnlTopLeft">
+            <Properties>
+              <Property name="opaque" type="boolean" value="false"/>
+            </Properties>
+            <Constraints>
+              <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                <BorderConstraints direction="West"/>
+              </Constraint>
+            </Constraints>
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+              <Property name="axis" type="int" value="1"/>
+            </Layout>
+            <SubComponents>
+              <Component class="javax.swing.JLabel" name="lblBreadcrumb">
+                <Properties>
+                  <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                    <Font name="SansSerif" size="13" style="0"/>
+                  </Property>
+                  <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                    <Color blue="8b" green="74" red="64" type="rgb"/>
+                  </Property>
+                  <Property name="text" type="java.lang.String" value="PRISMA / Data Mitra"/>
+                </Properties>
+              </Component>
+              <Component class="javax.swing.Box$Filler" name="fillerTop1">
+                <AuxValues>
+                  <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.Box.Filler(new java.awt.Dimension(0, 4), new java.awt.Dimension(0, 4), new java.awt.Dimension(0, 4))"/>
+                </AuxValues>
+              </Component>
+              <Component class="javax.swing.JLabel" name="lblPageTitle">
+                <Properties>
+                  <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                    <Font name="SansSerif" size="22" style="1"/>
+                  </Property>
+                  <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                    <Color blue="2a" green="17" red="f" type="rgb"/>
+                  </Property>
+                  <Property name="text" type="java.lang.String" value="Data Mitra"/>
+                </Properties>
+              </Component>
+            </SubComponents>
+          </Container>
+          <Container class="javax.swing.JPanel" name="pnlTopRight">
+            <Properties>
+              <Property name="opaque" type="boolean" value="false"/>
+            </Properties>
+            <Constraints>
+              <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                <BorderConstraints direction="East"/>
+              </Constraint>
+            </Constraints>
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+              <Property name="alignment" type="int" value="2"/>
+            </Layout>
+            <SubComponents>
+              <Component class="javax.swing.JLabel" name="lblAvatar">
+                <Properties>
+                  <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                    <Color blue="eb" green="63" red="25" type="rgb"/>
+                  </Property>
+                  <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                    <Font name="SansSerif" size="16" style="1"/>
+                  </Property>
+                  <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                    <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                  </Property>
+                  <Property name="horizontalAlignment" type="int" value="0"/>
+                  <Property name="text" type="java.lang.String" value="?"/>
+                  <Property name="opaque" type="boolean" value="true"/>
+                </Properties>
+              </Component>
+              <Container class="javax.swing.JPanel" name="pnlWho">
+                <Properties>
+                  <Property name="opaque" type="boolean" value="false"/>
+                </Properties>
+
+                <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                  <Property name="axis" type="int" value="1"/>
+                </Layout>
+                <SubComponents>
+                  <Component class="javax.swing.JLabel" name="lblUserName">
+                    <Properties>
+                      <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                        <Font name="SansSerif" size="13" style="1"/>
+                      </Property>
+                      <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                        <Color blue="2a" green="17" red="f" type="rgb"/>
+                      </Property>
+                      <Property name="text" type="java.lang.String" value=" "/>
+                    </Properties>
+                  </Component>
+                  <Component class="javax.swing.JLabel" name="lblUserRole">
+                    <Properties>
+                      <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                        <Font name="SansSerif" size="12" style="0"/>
+                      </Property>
+                      <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                        <Color blue="8b" green="74" red="64" type="rgb"/>
+                      </Property>
+                      <Property name="text" type="java.lang.String" value=" "/>
+                    </Properties>
+                  </Component>
+                </SubComponents>
+              </Container>
+              <Component class="javax.swing.JButton" name="btnLogout">
+                <Properties>
+                  <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                    <Color blue="e2" green="e2" red="fe" type="rgb"/>
+                  </Property>
+                  <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                    <Font name="SansSerif" size="13" style="1"/>
+                  </Property>
+                  <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                    <Color blue="26" green="26" red="dc" type="rgb"/>
+                  </Property>
+                  <Property name="text" type="java.lang.String" value="Log Out"/>
+                </Properties>
+                <Events>
+                  <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogoutActionPerformed"/>
+                </Events>
+              </Component>
+            </SubComponents>
+          </Container>
+        </SubComponents>
+      </Container>
+        <Container class="javax.swing.JPanel" name="pnlPage">
+          <Properties>
+            <Property name="opaque" type="boolean" value="false"/>
+          
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder bottom="0" left="28" right="0" top="0"/>
+              </Border>
+            </Property>
+</Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-              <BorderConstraints direction="South" />
+              <BorderConstraints direction="Center"/>
             </Constraint>
           </Constraints>
-        </Component>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+          <Container class="javax.swing.JPanel" name="pnlHead">
+            <Properties>
+              <Property name="opaque" type="boolean" value="false" />
+            </Properties>
+            <Constraints>
+              <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                <BorderConstraints direction="North" />
+              </Constraint>
+            </Constraints>
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" />
+            <SubComponents>
+              <Container class="javax.swing.JPanel" name="pnlHeadText">
+                <Properties>
+                  <Property name="opaque" type="boolean" value="false" />
+                </Properties>
+                <Constraints>
+                  <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                    <BorderConstraints direction="West" />
+                  </Constraint>
+                </Constraints>
+
+                <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                  <Property name="axis" type="int" value="1" />
+                </Layout>
+                <SubComponents>
+                  <Component class="javax.swing.JLabel" name="lblTitle">
+                    <Properties>
+                      <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                        <Font name="SansSerif" size="24" style="1" />
+                      </Property>
+                      <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                        <Color blue="2a" green="17" red="f" type="rgb" />
+                      </Property>
+                      <Property name="text" type="java.lang.String" value="Data Mitra" />
+                    </Properties>
+                  </Component>
+                  <Component class="javax.swing.Box$Filler" name="filler1">
+                    <AuxValues>
+                      <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.Box.Filler(new java.awt.Dimension(0, 6), new java.awt.Dimension(0, 6), new java.awt.Dimension(0, 6))" />
+                    </AuxValues>
+                  </Component>
+                  <Component class="javax.swing.JLabel" name="lblSubtitle">
+                    <Properties>
+                      <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                        <Font name="SansSerif" size="14" style="0" />
+                      </Property>
+                      <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                        <Color blue="8b" green="74" red="64" type="rgb" />
+                      </Property>
+                      <Property name="text" type="java.lang.String" value="Kelola data perusahaan atau pihak yang bekerja sama." />
+                    </Properties>
+                  </Component>
+                </SubComponents>
+              </Container>
+              <Component class="javax.swing.JButton" name="btnAdd">
+                <Properties>
+                  <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                    <Color blue="eb" green="63" red="25" type="rgb" />
+                  </Property>
+                  <Property name="focusPainted" type="boolean" value="false" />
+                  <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                    <Font name="SansSerif" size="13" style="1" />
+                  </Property>
+                  <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                    <Color blue="ff" green="ff" red="ff" type="rgb" />
+                  </Property>
+                  <Property name="text" type="java.lang.String" value="+ Tambah Mitra" />
+                </Properties>
+                <Events>
+                  <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddActionPerformed" />
+                </Events>
+                <Constraints>
+                  <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                    <BorderConstraints direction="East" />
+                  </Constraint>
+                </Constraints>
+              </Component>
+            </SubComponents>
+          </Container>
+          <Container class="javax.swing.JPanel" name="pnlCard">
+            <Properties>
+              <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                <Color blue="ff" green="ff" red="ff" type="rgb" />
+              </Property>
+              <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                  <EmptyBorder bottom="12" left="0" right="16" top="16" />
+                </Border>
+              </Property>
+            </Properties>
+            <Constraints>
+              <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                <BorderConstraints direction="Center" />
+              </Constraint>
+            </Constraints>
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" />
+            <SubComponents>
+              <Container class="javax.swing.JPanel" name="pnlToolbar">
+                <Properties>
+                  <Property name="opaque" type="boolean" value="false" />
+                </Properties>
+                <Constraints>
+                  <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                    <BorderConstraints direction="North" />
+                  </Constraint>
+                </Constraints>
+
+                <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" />
+                <SubComponents>
+                  <Container class="javax.swing.JPanel" name="pnlSearch">
+                    <Properties>
+                      <Property name="opaque" type="boolean" value="false" />
+                    </Properties>
+                    <Constraints>
+                      <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                        <BorderConstraints direction="West" />
+                      </Constraint>
+                    </Constraints>
+
+                    <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                      <Property name="alignment" type="int" value="0" />
+                      <Property name="hgap" type="int" value="4" />
+                      <Property name="vgap" type="int" value="0" />
+                    </Layout>
+                    <SubComponents>
+                      <Component class="javax.swing.JTextField" name="txtSearch">
+                        <Properties>
+                          <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                            <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
+                              <CompoundBorder>
+                                <Border PropertyName="outside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                  <LineBorder>
+                                    <Color PropertyName="color" blue="f0" green="e8" red="e2" type="rgb" />
+                                  </LineBorder>
+                                </Border>
+                                <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                                  <EmptyBorder bottom="6" left="10" right="10" top="6" />
+                                </Border>
+                              </CompoundBorder>
+                            </Border>
+                          </Property>
+                          <Property name="columns" type="int" value="24" />
+                          <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                            <Font name="SansSerif" size="13" style="0" />
+                          </Property>
+                          <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                            <Color blue="2a" green="17" red="f" type="rgb" />
+                          </Property>
+                          <Property name="toolTipText" type="java.lang.String" value="Ketik kata kunci lalu tekan Enter" />
+                        </Properties>
+                        <Events>
+                          <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSearchActionPerformed" />
+                        </Events>
+                      </Component>
+                      <Component class="javax.swing.JButton" name="btnCari">
+                        <Properties>
+                          <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                            <Color blue="eb" green="63" red="25" type="rgb" />
+                          </Property>
+                          <Property name="focusPainted" type="boolean" value="false" />
+                          <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                            <Font name="SansSerif" size="13" style="1" />
+                          </Property>
+                          <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                            <Color blue="ff" green="ff" red="ff" type="rgb" />
+                          </Property>
+                          <Property name="text" type="java.lang.String" value="Cari" />
+                        </Properties>
+                        <Events>
+                          <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCariActionPerformed" />
+                        </Events>
+                      </Component>
+                      <Component class="javax.swing.JButton" name="btnReset">
+                        <Properties>
+                          <Property name="focusPainted" type="boolean" value="false" />
+                          <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                            <Font name="SansSerif" size="13" style="1" />
+                          </Property>
+                          <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                            <Color blue="2a" green="17" red="f" type="rgb" />
+                          </Property>
+                          <Property name="text" type="java.lang.String" value="Reset" />
+                        </Properties>
+                        <Events>
+                          <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResetActionPerformed" />
+                        </Events>
+                      </Component>
+                    </SubComponents>
+                  </Container>
+                  <Container class="javax.swing.JPanel" name="pnlActions">
+                    <Properties>
+                      <Property name="opaque" type="boolean" value="false" />
+                    </Properties>
+                    <Constraints>
+                      <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                        <BorderConstraints direction="East" />
+                      </Constraint>
+                    </Constraints>
+
+                    <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                      <Property name="alignment" type="int" value="2" />
+                      <Property name="hgap" type="int" value="8" />
+                      <Property name="vgap" type="int" value="0" />
+                    </Layout>
+                    <SubComponents>
+                      <Component class="javax.swing.JButton" name="btnUbah">
+                        <Properties>
+                          <Property name="focusPainted" type="boolean" value="false" />
+                          <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                            <Font name="SansSerif" size="13" style="1" />
+                          </Property>
+                          <Property name="text" type="java.lang.String" value="Ubah" />
+                        </Properties>
+                        <Events>
+                          <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUbahActionPerformed" />
+                        </Events>
+                      </Component>
+                      <Component class="javax.swing.JButton" name="btnHapus">
+                        <Properties>
+                          <Property name="focusPainted" type="boolean" value="false" />
+                          <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                            <Font name="SansSerif" size="13" style="1" />
+                          </Property>
+                          <Property name="text" type="java.lang.String" value="Hapus" />
+                        </Properties>
+                        <Events>
+                          <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHapusActionPerformed" />
+                        </Events>
+                      </Component>
+                    </SubComponents>
+                  </Container>
+                </SubComponents>
+              </Container>
+              <Container class="javax.swing.JScrollPane" name="scrTable">
+                <Properties>
+                  <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                    <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                      <LineBorder>
+                        <Color PropertyName="color" blue="f0" green="e8" red="e2" type="rgb" />
+                      </LineBorder>
+                    </Border>
+                  </Property>
+                </Properties>
+                <AuxValues>
+                  <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                </AuxValues>
+                <Constraints>
+                  <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                    <BorderConstraints direction="Center" />
+                  </Constraint>
+                </Constraints>
+
+                <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout" />
+                <SubComponents>
+                  <Component class="javax.swing.JTable" name="tblData">
+                    <Properties>
+                      <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                        <Table columnCount="6" rowCount="0">
+                          <Column editable="false" title="ID Mitra" type="java.lang.Object"/>
+                          <Column editable="false" title="Nama Mitra" type="java.lang.Object"/>
+                          <Column editable="false" title="Jenis" type="java.lang.Object"/>
+                          <Column editable="false" title="Email" type="java.lang.Object"/>
+                          <Column editable="false" title="Alamat" type="java.lang.Object"/>
+                          <Column editable="false" title="Status" type="java.lang.Object"/>
+                        </Table>
+                      </Property>
+                    </Properties>
+                  </Component>
+                </SubComponents>
+              </Container>
+              <Component class="javax.swing.JLabel" name="lblCount">
+                <Properties>
+                  <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                    <Font name="SansSerif" size="12" style="0" />
+                  </Property>
+                  <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                    <Color blue="8b" green="74" red="64" type="rgb" />
+                  </Property>
+                  <Property name="text" type="java.lang.String" value=" " />
+                </Properties>
+                <Constraints>
+                  <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                    <BorderConstraints direction="South" />
+                  </Constraint>
+                </Constraints>
+              </Component>
+            </SubComponents>
+          </Container>
+          </SubComponents>
+        </Container>
+      <Component class="javax.swing.JLabel" name="lblFooter">
+        <Properties>
+          <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+            <Font name="SansSerif" size="12" style="0"/>
+          </Property>
+          <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+            <Color blue="8b" green="74" red="64" type="rgb"/>
+          </Property>
+          <Property name="horizontalAlignment" type="int" value="0"/>
+          <Property name="text" type="java.lang.String" value="PRISMA &#xb7; Sistem informasi manajemen konten"/>
+          <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+            <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+              <EmptyBorder bottom="10" left="0" right="0" top="6"/>
+            </Border>
+          </Property>
+        </Properties>
+        <Constraints>
+          <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+            <BorderConstraints direction="South"/>
+          </Constraint>
+        </Constraints>
+      </Component>
       </SubComponents>
     </Container>
   </SubComponents>
